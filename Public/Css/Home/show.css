@@ -1,0 +1,13 @@
+body{
+		background-image:url(bj.jpg);
+}
+table{
+		margin-top:100px;
+}
+td{
+	text-align:center;
+}
+#b{
+		margin-top:30px;
+		margin-left:900px;
+}

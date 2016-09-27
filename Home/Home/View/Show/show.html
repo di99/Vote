@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta http-equiv="content=type" content="text/html;charset=utf-8">
+		<title>Show</title>
+	</head>
+	<load href="__PUBLIC__/Css/Home/show.css"/>
+	<body>
+		<table width="700"  border="1" color="red" align="center">
+			<tr><td><font size="6">姓名</td> <td><font size="6">班级</td> <td><font size="6">票数</td>
+					<td><a href="__APP__/Home/Add/add">增加信息</a></td>
+			<foreach name='list' item='vo'>
+				<tr>
+					<td>{$vo.name}</td> 
+					<td>{$vo.class}</td>
+					<td>{$vo.count}</td>
+					<td><a href='__APP__/Home/Update/update?id={$vo.id}'>修改</a>
+						<a href='__APP__/Home/Update/delete?id={$vo.id}'>删除</a></td>
+				</tr>
+			</foreach>
+		</table>
+			<div id='b'><a href='__APP__/Home/Vote/vote' class='b'>返回主页面</a></div>
+	</body>
+</html> 
